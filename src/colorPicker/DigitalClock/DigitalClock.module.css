@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Protest+Guerrilla&display=swap') ;
+
+
+.digital-clock-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+}
+
+.clock{
+    color: rgb(255, 255, 255);
+    font-size: 6rem;
+    font-family: "Protest Guerrilla", sans-serif;
+    /* font-family: monospace; */
+   
+    font-style: normal;
+
+    padding: 0 1rem; 
+    
+}
+
+.time-display{
+   cursor: default;
+    transition: text-shadow 0.3s ease ;
+}
+
+.time-display:hover{
+    text-shadow: 0 0 25px #ff00e6; 
+}
+
+@media (max-width: 426px){
+   .time-display{
+    font-size: 3.5rem;
+   }
+}
+@media (max-width: 376px){
+    .time-display{
+     font-size: 3rem;
+     
+    }
+ }
+ @media (max-width: 321px){
+    .time-display{
+     font-size: 2.5rem;
+     
+    }
+ }
